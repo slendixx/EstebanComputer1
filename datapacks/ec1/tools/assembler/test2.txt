@@ -1,0 +1,23 @@
+<Some syntax examples>
+
+.org 0 
+$x 5 <Variable definition>
+$y 7
+$r 0
+
+
+.org 100
+:main	<label definition. Marks entry point>
+	ld1 x <single argument instruction>
+	ld2 y  
+	addcc <no argumente instruction>
+	st r
+	bpos 2
+	call makePositive <subroutine call>
+	ret <Expect your programs to be subroutines>
+
+:makePositive <Label definition. Marks subroutine>
+	ld1 r
+	ld2 -1
+	mul
+	ret

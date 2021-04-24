@@ -14,3 +14,4 @@ scoreboard players add ir2 reg 0
 scoreboard players add mar reg 0
 scoreboard players add mbr1 reg 0
 scoreboard players add mbr2 reg 0
+scoreboard players add csptr reg 0

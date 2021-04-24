@@ -1,0 +1,31 @@
+{
+  "operators": [".", ":", "$"],
+  "directives": ["beg", "org", "imp"],
+  "noArgInstructions": [
+    "add",
+    "addcc",
+    "sub",
+    "subcc",
+    "mul",
+    "mulcc",
+    "div",
+    "divcc",
+    "mod",
+    "modcc"
+  ],
+  "singleArgInstructions": [
+    "ba",
+    "beq",
+    "bneg",
+    "bpos",
+    "call",
+    "ret",
+    "ld1",
+    "ld2",
+    "ldi1",
+    "ldi2",
+    "st",
+    "sti",
+    "defer"
+  ]
+}
