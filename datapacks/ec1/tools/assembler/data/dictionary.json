@@ -11,7 +11,8 @@
     "div",
     "divcc",
     "mod",
-    "modcc"
+    "modcc",
+    "ret"
   ],
   "singleArgInstructions": [
     "ba",

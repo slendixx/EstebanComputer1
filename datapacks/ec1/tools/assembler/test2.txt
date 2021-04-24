@@ -4,6 +4,7 @@
 $x 5 <Variable definition>
 $y 7
 $r 0
+#p_x x
 
 
 .org 100
