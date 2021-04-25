@@ -1,6 +1,6 @@
 {
-  "operators": [".", ":", "$"],
-  "directives": ["beg", "org", "imp"],
+  "operators": [".", ":", "$", "#"],
+  "directives": ["org"],
   "noArgInstructions": [
     "add",
     "addcc",
@@ -11,8 +11,7 @@
     "div",
     "divcc",
     "mod",
-    "modcc",
-    "ret"
+    "modcc"
   ],
   "singleArgInstructions": [
     "ba",

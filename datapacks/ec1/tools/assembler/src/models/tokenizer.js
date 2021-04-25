@@ -11,7 +11,15 @@ const getTokens = function (source) {
   buffer = removeComments(buffer);
   buffer = formatPrefixes(buffer);
   buffer = removeLineJumps(buffer);
-  return buffer.split(" ").filter((token) => token !== "");
+  return buffer
+    .split(" ")
+    .filter((token) => token !== "")
+    .map((token, index) => {
+      return {
+        i: index + 1,
+        value: token,
+      };
+    });
 };
 
 const removeComments = function (source) {
