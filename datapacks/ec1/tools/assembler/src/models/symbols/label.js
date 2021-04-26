@@ -3,11 +3,11 @@ const Symbol = require("./symbol");
 class Label extends Symbol {
   constructor({ address, id }) {
     super({
-      type: "variable",
+      type: "label",
       address: address,
       id: id,
       value: null,
-      toBeResolved: true,
+      toBeResolved: false,
       valueHolderId: null,
     });
   }

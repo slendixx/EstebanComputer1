@@ -29,7 +29,7 @@ const removeComments = function (source) {
 const formatPrefixes = function (source) {
   const buffer = source;
   return buffer
-    .replace(/\./g, " . ")
+    .replace(/\;/g, " ; ")
     .replace(/\:/g, " : ")
     .replace(/\$/g, " $ ")
     .replace(/\#/g, " # ");

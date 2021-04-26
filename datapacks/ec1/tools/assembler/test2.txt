@@ -1,19 +1,30 @@
 <Some syntax examples>
 
-.org 1
-$x 5 <Variable definition>
-$y 7
+;org 1
+$x 5.1 <Variable definition>
+$y 7.2
+$z y
 $r 0
 #p_x x
+#p_makePositive makePositive
 
-.org 100
+;org 50
+:makeNegative
+ldi1 p_x
+ld2 z 
+sub
+st r
+ret 1
+
+;org 100
 :main	<label definition. Marks entry point>
-	ld1 x <single argument instruction>
+	ldi1 p_x <single argument instruction>
 	ld2 y  
 	addcc <no argument instruction>
 	st r
 	bpos 2
 	call makePositive <subroutine call>
+	call makeNegative
 	ret 1 <Expect your programs to be subroutines>
 
 :makePositive <Label definition. Marks subroutine>

@@ -1,5 +1,5 @@
 {
-  "operators": [".", ":", "$", "#"],
+  "operators": [";", ":", "$", "#"],
   "directives": ["org"],
   "noArgInstructions": [
     "add",
@@ -27,5 +27,6 @@
     "st",
     "sti",
     "defer"
-  ]
+  ],
+  "branchInstructions": ["ba", "beq", "bneg", "bpos", "call", "ret"]
 }

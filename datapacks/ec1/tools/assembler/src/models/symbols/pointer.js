@@ -3,7 +3,7 @@ const Symbol = require("./symbol");
 class Pointer extends Symbol {
   constructor({ address, id }) {
     super({
-      type: "variable",
+      type: "pointer",
       address: address,
       id: id,
       value: null,
